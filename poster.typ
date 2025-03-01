@@ -38,6 +38,8 @@
 )
 
 #align(center + horizon)[
+  #move(dy:-0.4in)[
+
   #text(fill: white, size: 48pt,weight: "bold")[
     Pendant & Necklace
   ]
@@ -58,16 +60,25 @@
     ]
   )
 
-  #text(fill: white, size: 48pt, weight: "bold")[
-    Limit 1 per person
+    #text(fill: white, size: 48pt, weight: "bold", bottom-edge: 1pt)[
+      Limit 1 per person
+    ]
   ]
+
 ]
 
-#grid(
-  columns: (1fr, 1fr, 1fr, 1fr),
-  rows: (auto),
-  profile-pic("img/aleksanaa.jpg", "@aleksanaa"),
-  profile-pic("img/djacu.jpg", "@djacu"),
-  profile-pic("img/infinisil.png", "@infinisil"),
-  profile-pic("img/tomberek.png", "@tomberek"),
-)
+#move(dy: 0.3in)[
+  #align(center + horizon)[
+    #text(fill: white, size: 26pt, weight: "medium", top-edge: 1pt)[
+     Brought to you by
+    ]
+  ]
+  #grid(
+    columns: (1fr, 1fr, 1fr, 1fr),
+    rows: (auto),
+    profile-pic("img/aleksanaa.jpg", "@aleksanaa"),
+    profile-pic("img/djacu.jpg", "@djacu"),
+    profile-pic("img/infinisil.png", "@infinisil"),
+    profile-pic("img/tomberek.png", "@tomberek"),
+  )
+]
