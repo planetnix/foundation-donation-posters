@@ -1,5 +1,5 @@
 {
-  description = "Planet Nix Posters";
+  description = "Donation Posters";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
@@ -20,16 +20,19 @@
       in {
         packages = with pkgs; rec {
           planetNixSite = stdenv.mkDerivation {
-            name = "planetnix-poster";
+            name = "donation-poster";
             src = ./.;
             buildInputs = with pkgs; [
               typst
             ];
-            buildCommand = '''';
+            buildPhase = ''
+              mkdir build
+              typst compile --font-path ./fonts poster.typ build/donation-poster.pdf
+            '';
 
             installPhase = ''
               mkdir $out
-              typst compile --font-path ./fonts poster.typ $out/planetnix-poster.pdf
+              cp -r build/* $out
             '';
           };
 
