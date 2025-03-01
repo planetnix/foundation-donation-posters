@@ -44,6 +44,8 @@
     Pendant & Necklace
   ]
 
+  #move(dx: -.4in)[
+
   #grid(
     columns: (1fr, 1fr, 1fr),
     rows: (auto),
@@ -59,6 +61,7 @@
       ]
     ]
   )
+  ]
 
     #text(fill: white, size: 48pt, weight: "bold", bottom-edge: 1pt)[
       Limit 1 per person
@@ -76,7 +79,7 @@
   #grid(
     columns: (1fr, 1fr, 1fr, 1fr),
     rows: (auto),
-    profile-pic("img/aleksanaa.jpg", "@aleksanaa"),
+    profile-pic("img/aleksanaa.jpg", "@alety      ksanaa"),
     profile-pic("img/djacu.jpg", "@djacu"),
     profile-pic("img/infinisil.png", "@infinisil"),
     profile-pic("img/tomberek.png", "@tomberek"),
