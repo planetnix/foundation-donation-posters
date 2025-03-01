@@ -79,7 +79,7 @@
   #grid(
     columns: (1fr, 1fr, 1fr, 1fr),
     rows: (auto),
-    profile-pic("img/aleksanaa.jpg", "@alety      ksanaa"),
+    profile-pic("img/aleksanaa.jpg", "@aleksanaa"),
     profile-pic("img/djacu.jpg", "@djacu"),
     profile-pic("img/infinisil.png", "@infinisil"),
     profile-pic("img/tomberek.png", "@tomberek"),
