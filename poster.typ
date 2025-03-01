@@ -5,6 +5,8 @@
   background: rect(fill: blue, width: 8.5in, height: 11in)
 ) 
 
+#set text(font: "Vegur")
+
 #let profile-pic(image_path, name) = rect(stroke: none)[
   #let image-width = 1.4in
   #align(center + horizon)[
@@ -48,7 +50,7 @@
         For
       ]
     ],
-    text(fill: white, size: 120pt)[\$5],
+    text(fill: white, size: 120pt, weight: "bold")[\$5],
     align(left)[
       #text(fill: white, size: 32pt)[
         or more
