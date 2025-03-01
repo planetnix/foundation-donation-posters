@@ -6,8 +6,12 @@
 ) 
 
 #let profile-pic(image_path, name) = rect(stroke: none)[
+  #let image-width = 1.4in
   #align(center + horizon)[
-    #image(image_path, width: 2in, height: 2in)
+    #box(clip: true, radius: image-width,
+  width: image-width, height: image-width)[
+    #image(image_path, width: image-width, height: image-width)
+  ]
     #align(center + horizon)[
       #text(fill: white, size: 24pt)[
         #name
@@ -31,16 +35,26 @@
   ]
 )
 
-#align(center)[
+#align(center + horizon)[
   #text(fill: white, size: 48pt)[
     Pendant & Necklace
   ]
 
-  #align(center + horizon)[
-    #text(fill: white, size: 32pt)[
-      For #text(size: 100pt)[\$5] or more
-    ]    
-  ]
+  #grid(
+    columns: (1fr, 1fr, 1fr),
+    rows: (auto),
+    align(right)[
+      #text(fill: white, size: 32pt)[
+        For
+      ]
+    ],
+    text(fill: white, size: 120pt)[\$5],
+    align(left)[
+      #text(fill: white, size: 32pt)[
+        or more
+      ]
+    ]
+  )
 
   #text(fill: white, size: 48pt)[
     Limit 1 per person
