@@ -1,4 +1,4 @@
-# NixOS Foundation Poster
+# NixOS Foundation Donations Poster
 
 
 ## Building
