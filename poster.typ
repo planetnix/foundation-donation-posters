@@ -2,7 +2,11 @@
   width: 8.5in, 
   height: 11in, 
   margin: 0.5in, 
-  background: rect(fill: blue, width: 8.5in, height: 11in)
+  background: rect(fill: gradient.linear(rgb("#406d8e"), rgb("#5277C3"), angle: 90deg), width: 8.5in, height: 11in)[
+    #rect(fill: pattern(size: (1430mm/2, 454mm/2))[
+      #image("img/background.svg", width: 1430mm/2, height: 454mm/2)
+    ], width: 8.5in, height: 11in)
+  ]
 ) 
 
 #set text(font: "Vegur")
