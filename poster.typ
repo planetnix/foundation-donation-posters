@@ -16,7 +16,7 @@
   #align(center + horizon)[
     #box(clip: true, radius: image-width,
   width: image-width, height: image-width)[
-    #image(image_path, width: image-width, height: image-width)
+    #image(image_path, width: image-width*1.1, height: image-width*1.1)
   ]
     #align(center + horizon)[
       #text(fill: white, size: 20pt, top-edge: 1pt)[
