@@ -15,7 +15,7 @@
     #image(image_path, width: image-width, height: image-width)
   ]
     #align(center + horizon)[
-      #text(fill: white, size: 24pt)[
+      #text(fill: white, size: 20pt, top-edge: 1pt)[
         #name
       ]
     ]
@@ -31,14 +31,14 @@
     height: 2in,
   ),
   align(center + horizon)[
-    #text(fill: white, size: 48pt)[
+    #text(fill: white, size: 48pt, weight: "medium")[
       NixOS Foundation Donation Booth
     ]
   ]
 )
 
 #align(center + horizon)[
-  #text(fill: white, size: 48pt)[
+  #text(fill: white, size: 48pt,weight: "bold")[
     Pendant & Necklace
   ]
 
@@ -46,19 +46,19 @@
     columns: (1fr, 1fr, 1fr),
     rows: (auto),
     align(right)[
-      #text(fill: white, size: 32pt)[
+      #text(fill: white, size: 32pt, weight: "medium")[
         For
       ]
     ],
     text(fill: white, size: 120pt, weight: "bold")[\$5],
     align(left)[
-      #text(fill: white, size: 32pt)[
+      #text(fill: white, size: 32pt, weight: "medium")[
         or more
       ]
     ]
   )
 
-  #text(fill: white, size: 48pt)[
+  #text(fill: white, size: 48pt, weight: "bold")[
     Limit 1 per person
   ]
 ]
